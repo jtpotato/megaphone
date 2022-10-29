@@ -28,7 +28,7 @@ const Post = () => {
               <Skeleton variant="circular" width={40} height={40} />
               <Stack direction="column" spacing={1}>
                 <Skeleton width={120}></Skeleton>
-                <Skeleton variant="rounded" width={210} height={60} />
+                <Skeleton variant="rounded" width={400} height={60} />
               </Stack>
             </Stack>
             <Stack justifyContent={"space-evenly"} direction="row">
@@ -55,7 +55,6 @@ const Post = () => {
                 <IconButton>
                   <IosShare></IosShare>
                 </IconButton>
-                <Skeleton width={40}></Skeleton>
               </Stack>
             </Stack>
           </Stack>
