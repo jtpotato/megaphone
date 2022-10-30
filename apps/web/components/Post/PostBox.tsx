@@ -1,30 +1,18 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Skeleton,
-  Stack,
-  TextField,
-} from "@mui/material";
+import { Card, Textarea, User } from "@nextui-org/react";
 
-const PostBox = () => {
+function PostBox() {
   return (
     <>
-      <Card variant="outlined">
-        <CardContent>
-          <Stack direction="row" spacing={1}>
-            <Skeleton variant="circular" width={40} height={40}></Skeleton>
-            <TextField
-              multiline
-              variant="outlined"
-              placeholder="What's happening?"
-              fullWidth
-            ></TextField>
-          </Stack>
-        </CardContent>
+      <Card>
+        <Card.Body>
+          <User src="" name="You">
+            <User.Link>@you</User.Link>
+          </User>
+          <Textarea placeholder="What's happening?" css={{ marginLeft: 64 }}/>
+        </Card.Body>
       </Card>
     </>
   );
-};
+}
 
 export default PostBox;
